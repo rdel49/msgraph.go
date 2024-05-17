@@ -70,7 +70,7 @@ func main() {
 	}{}
 
 	flag.BoolVar(&data.Pretty, "pretty", false, "Pretty output")
-	flag.StringVar(&data.BaseURL, "baseURL", "https://graph.microsoft.com/v1.0", "Base URL")
+	flag.StringVar(&data.BaseURL, "baseURL", "https://graph.microsoft.us/v1.0", "Base URL")
 	flag.StringVar(&data.Out, "out", "metadata-v1.0.xml", "Output file name")
 	flag.Parse()
 

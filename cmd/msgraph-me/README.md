@@ -6,9 +6,9 @@ This example shows user's profile of signed in user, then downloads files in the
 $ msgraph-me
 To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code H5N62P7KQ to authenticate.
 2019/12/07 02:39:21 Get current logged in user information
-2019/12/07 02:39:21 GET https://graph.microsoft.com/v1.0/me
+2019/12/07 02:39:21 GET https://graph.microsoft.us/v1.0/me
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "@odata.context": "https://graph.microsoft.us/v1.0/$metadata#users/$entity",
   "id": "6764eb11-841c-444e-b770-0e0d8748ea0a",
   "displayName": "八重樫 剛史",
   "givenName": "剛史",
@@ -17,7 +17,7 @@ To sign in, use a web browser to open the page https://microsoft.com/devicelogin
   "userPrincipalName": "yaegashi@l0wdev.onmicrosoft.com"
 }
 2019/12/07 02:39:21 Get files in the root folder of user's drive
-2019/12/07 02:39:21 GET https://graph.microsoft.com/v1.0/me/drive/root/children
+2019/12/07 02:39:21 GET https://graph.microsoft.us/v1.0/me/drive/root/children
 2019/12/07 02:39:21   FILE 2019-10-27T07:57:28Z       7972 Book.xlsx
 2019/12/07 02:39:21   FILE 2019-10-27T07:57:19Z      11395 ドキュメント.docx
 2019/12/07 02:39:21   FILE 2019-10-27T07:57:36Z      29014 プレゼンテーション.pptx

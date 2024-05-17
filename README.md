@@ -14,7 +14,7 @@
 Don't use in production.
 
 The library code is auto-generated from the REST API specification
-available at https://graph.microsoft.com/v1.0/$metadata.
+available at https://graph.microsoft.us/v1.0/$metadata.
 
 The code generator is written in pure Go,
 in contrast to [the official code generator][Microsoft Graph SDK Code Generator]
@@ -60,9 +60,9 @@ Run `go generate ./gen` to download the metadata and generate library code from 
 
 ```console
 $ go generate ./gen
-2020/08/02 19:46:20 Downloading https://graph.microsoft.com/v1.0/$metadata to metadata/v1.0.xml
+2020/08/02 19:46:20 Downloading https://graph.microsoft.us/v1.0/$metadata to metadata/v1.0.xml
 2020/08/02 19:46:20 metadata/v1.0.xml already exists, skipping
-2020/08/02 19:46:21 Downloading https://graph.microsoft.com/beta/$metadata to metadata/beta.xml
+2020/08/02 19:46:21 Downloading https://graph.microsoft.us/beta/$metadata to metadata/beta.xml
 2020/08/02 19:46:21 metadata/beta.xml already exists, skipping
 2020/08/02 19:46:21 Creating directory ../v1.0
 2020/08/02 19:46:21 Removing ../v1.0/ModelAverage.go
