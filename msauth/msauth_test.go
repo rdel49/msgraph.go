@@ -37,7 +37,7 @@ func ExampleManager_DeviceAuthorizationGrant() {
 		log.Fatal(err)
 	}
 	httpClient := oauth2.NewClient(ctx, ts)
-	res, err := httpClient.Get("https://graph.microsoft.com/v1.0/me")
+	res, err := httpClient.Get("https://graph.microsoft.us/v1.0/me")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -57,7 +57,7 @@ func ExampleManager_ClientCredentialsGrant() {
 		log.Fatal(err)
 	}
 	httpClient := oauth2.NewClient(ctx, ts)
-	res, err := httpClient.Get("https://graph.microsoft.com/v1.0/me")
+	res, err := httpClient.Get("https://graph.microsoft.us/v1.0/me")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -77,7 +77,7 @@ func ExampleManager_ResourceOwnerPasswordGrant() {
 		log.Fatal(err)
 	}
 	httpClient := oauth2.NewClient(ctx, ts)
-	res, err := httpClient.Get("https://graph.microsoft.com/v1.0/me")
+	res, err := httpClient.Get("https://graph.microsoft.us/v1.0/me")
 	if err != nil {
 		log.Fatal(err)
 	}

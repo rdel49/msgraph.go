@@ -21,8 +21,8 @@ import (
 
 const (
 	// DefaultMSGraphScope is the default scope for MS Graph API
-	DefaultMSGraphScope = "https://graph.microsoft.com/.default"
-	endpointURLFormat   = "https://login.microsoftonline.com/%s/oauth2/v2.0/%s"
+	DefaultMSGraphScope = "https://graph.microsoft.us/.default"
+	endpointURLFormat   = "https://login.microsoftonline.us%s/oauth2/v2.0/%s"
 )
 
 // TokenError is returned on failed authentication

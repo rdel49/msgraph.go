@@ -3,5 +3,5 @@
 package msgraph
 
 const (
-	defaultBaseURL = "https://graph.microsoft.com/v1.0"
+	defaultBaseURL = "https://graph.microsoft.us/v1.0"
 )

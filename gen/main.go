@@ -1,9 +1,9 @@
 package main
 
-//go:generate go run ./metadata -pretty -baseURL https://graph.microsoft.com/v1.0 -out metadata/v1.0.xml
-//go:generate go run ./metadata -pretty -baseURL https://graph.microsoft.com/beta -out metadata/beta.xml
-//go:generate go run . -baseURL https://graph.microsoft.com/v1.0 -in metadata/v1.0.xml -out ../v1.0
-//go:generate go run . -baseURL https://graph.microsoft.com/beta -in metadata/beta.xml -out ../beta
+//go:generate go run ./metadata -pretty -baseURL https://graph.microsoft.us/v1.0 -out metadata/v1.0.xml
+//go:generate go run ./metadata -pretty -baseURL https://graph.microsoft.us/beta -out metadata/beta.xml
+//go:generate go run . -baseURL https://graph.microsoft.us/v1.0 -in metadata/v1.0.xml -out ../v1.0
+//go:generate go run . -baseURL https://graph.microsoft.us/beta -in metadata/beta.xml -out ../beta
 
 import (
 	"flag"
@@ -15,7 +15,7 @@ import (
 func main() {
 	g := &Generator{Created: map[string]bool{}, SymTypeMap: map[string]string{}}
 
-	flag.StringVar(&g.BaseURL, "baseURL", "https://graph.microsoft.com/v1.0", "Base URL")
+	flag.StringVar(&g.BaseURL, "baseURL", "https://graph.microsoft.us/v1.0", "Base URL")
 	flag.StringVar(&g.In, "in", "metadata/v1.0.xml", "Input file name")
 	flag.StringVar(&g.Out, "out", "out", "Output folder name")
 	flag.StringVar(&g.Fmt, "fmt", "goimports", "Formatter")
