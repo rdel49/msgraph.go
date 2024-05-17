@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/yaegashi/msgraph.go/jsonx"
+	"github.com/rdel49/msgraph.go/jsonx"
 )
 
 // DriveItem is navigation property
